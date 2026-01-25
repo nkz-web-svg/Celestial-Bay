@@ -207,7 +207,7 @@
          /* フッター */
 
 #access {
-             padding: 60px 0;
+             padding: 45px 0;
          }
 
 .footer-inner {
@@ -248,7 +248,7 @@
              }
 
             #access {
-                 padding: 40px 0;
+                 padding: 35px 0;
              }
             .footer-inner {
                 flex-direction: column;
@@ -270,4 +270,5 @@
             }
 
          }
+
 
