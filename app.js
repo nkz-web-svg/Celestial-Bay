@@ -17,13 +17,15 @@ cards.forEach(card => {
 
 document.querySelectorAll('.nav-link').forEach(link => {
   link.addEventListener('click', () => {
-    const offcanvasEl = document.getElementById('offcanvasDarkNavbar');
+      
+    const offcanvasC1 = document.getElementById('offcanvasDarkNavbar');
 
-    let offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+    let offcanvas = bootstrap.Offcanvas.getInstance(offcanvasC1);
     if (!offcanvas) {
-      offcanvas = new bootstrap.Offcanvas(offcanvasEl);
+      offcanvas = new bootstrap.Offcanvas(offcanvasC1);
     }
 
     offcanvas.hide();
   });
 });
+
