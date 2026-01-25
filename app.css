@@ -206,6 +206,10 @@
 
          /* フッター */
 
+#access {
+             padding: 60px 0;
+         }
+
 .footer-inner {
     display: flex;
     align-items: baseline;
@@ -236,16 +240,16 @@
 
          /* スマホ対応 */
 
-         @media (max-width: 768px) {
-             .carousel-caption h2 {
+         @media(max-width: 768px) {
+                  .carousel-caption h2 {
                  font-size: 30px;
                  bottom: 70%;
                  right: 10%;
              }
-         }
 
-
-         @media(max-width: 768px) {
+            #access {
+                 padding: 40px 0;
+             }
             .footer-inner {
                 flex-direction: column;
                 gap: 4px;
@@ -266,3 +270,4 @@
             }
 
          }
+
