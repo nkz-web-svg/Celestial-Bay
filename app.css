@@ -179,14 +179,9 @@
              transition: transform 0.3s ease, box-shadow 0.3s ease;
          }
 
-         .fade-in.active {
-             transform: translateY(-10px);
-             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.20);
-         }
-
          .fade-in:hover {
              transform: translateY(-6px);
-             box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+             box-shadow: 0 12px 25px rgba(0, 0, 0, 0.30);
          }
 
 
@@ -270,5 +265,6 @@
             }
 
          }
+
 
 
