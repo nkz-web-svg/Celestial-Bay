@@ -11,4 +11,19 @@ cards.forEach(card => {
             card.classList.add("active");
         }
     });
+
+});
+
+
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const offcanvasEl = document.getElementById('offcanvasDarkNavbar');
+
+    let offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+    if (!offcanvas) {
+      offcanvas = new bootstrap.Offcanvas(offcanvasEl);
+    }
+
+    offcanvas.hide();
+  });
 });
