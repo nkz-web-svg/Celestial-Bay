@@ -40,6 +40,11 @@
 
          /* heroセクション */
 
+         .hero {
+             height: 100vh;
+             height: 100dvh;
+         }
+
          .hero-swiper {
              width: 100%;
              height: 50vh;
@@ -214,6 +219,22 @@
          /* スマホ対応 */
 
          @media(max-width: 768px) {
+
+             .hero,
+             .hero-swiper,
+             #hero .carousel-item {
+                 height: 60vh !important;
+                 height: 60dvh !important;
+             }
+
+             .hero-content {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 padding-top: 60px;
+                 height: 100%;
+             }
+
              .card-text {
                  font-size: 0.9rem;
                  line-height: 1.6;
@@ -225,12 +246,22 @@
              }
 
              .carousel-caption {
-                 bottom: 70%;
-                 right: 10%;
+                 bottom: 20%;
+                 transform: translateY(50%);
+                 right: 0;
+                 left: 0;
+                 width: 100%;
+                 padding-bottom: 10px;
              }
 
              .carousel-caption h2 {
-                 font-size: 30px;
+                 font-size: 24px;
+             }
+
+             .carousel-caption p {
+                 font-size: 16px !important;
+                 line-height: 1.5;
+                 padding: 0 10px;
              }
 
              #access {
